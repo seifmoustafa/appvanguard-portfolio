@@ -186,3 +186,27 @@ section {
     padding: 1rem;
   }
 }
+
+/* Custom scrollbar for the tabs area */
+.tabs-scrollbar {
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #3b82f6 transparent; /* Thumb color blue-500; track transparent */
+}
+
+.tabs-scrollbar::-webkit-scrollbar {
+  height: 6px; /* Smaller height for the horizontal scrollbar */
+}
+
+.tabs-scrollbar::-webkit-scrollbar-track {
+  background: transparent; /* Transparent track */
+}
+
+.tabs-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #3b82f6; /* Tailwind blue-500 */
+  border-radius: 9999px; /* Fully rounded scrollbar thumb */
+  border: 2px solid transparent;
+}
+
+.tabs-scrollbar::-webkit-scrollbar-corner {
+  background: transparent;
+}
